@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Environment",
+    "displayName": "rti_environment_rtisaaghtblp2",
+    "description": "Environment for rtisaagh"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "ac2a2042-1dbf-8330-49cb-efe033645b69"
+  }
+}

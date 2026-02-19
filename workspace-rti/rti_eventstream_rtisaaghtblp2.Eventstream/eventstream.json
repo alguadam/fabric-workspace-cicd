@@ -1,0 +1,253 @@
+{
+  "sources": [
+    {
+      "id": "57d2b18f-f4e0-4162-b78f-a599a9dfc645",
+      "name": "evhrtisaaghtblp2",
+      "type": "AzureEventHub",
+      "properties": {
+        "dataConnectionId": "60ac8510-47fe-4ff5-b551-f3b4507df37a",
+        "consumerGroupName": "$Default",
+        "inputSerialization": {
+          "type": "Json",
+          "properties": {
+            "encoding": "UTF8"
+          }
+        }
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "id": "176127cd-845e-41e4-9766-2dc4648e558e",
+      "name": "rti-eventhouse-rtisaaghtblp2",
+      "type": "Eventhouse",
+      "properties": {
+        "dataIngestionMode": "ProcessedIngestion",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "itemId": "3d0d7db4-5288-a186-4c7d-1a1b5f34fd62",
+        "databaseName": "rti_kqldb_rtisaaghtblp2",
+        "tableName": "events",
+        "inputSerialization": {
+          "type": "Json",
+          "properties": {
+            "encoding": "UTF8"
+          }
+        }
+      },
+      "inputNodes": [
+        {
+          "name": "rti_eventstream_rtisaaghtblp2"
+        }
+      ],
+      "inputSchemas": [
+        {
+          "name": "rti_eventstream_rtisaaghtblp2",
+          "schema": {
+            "columns": [
+              {
+                "name": "Id",
+                "type": "Nvarchar(max)",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "AssetId",
+                "type": "Nvarchar(max)",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "ProductId",
+                "type": "Nvarchar(max)",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "Timestamp",
+                "type": "Nvarchar(max)",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "BatchId",
+                "type": "Nvarchar(max)",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "Vibration",
+                "type": "Float",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "Temperature",
+                "type": "Float",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "Humidity",
+                "type": "Float",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "Speed",
+                "type": "Float",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "DefectProbability",
+                "type": "BigInt",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "EventProcessedUtcTime",
+                "type": "DateTime",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "PartitionId",
+                "type": "BigInt",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "EventEnqueuedUtcTime",
+                "type": "DateTime",
+                "fields": null,
+                "items": null
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "1cacff84-7bc4-41bf-a3f9-772685a299fa",
+      "name": "rti-activator-rtisaaghtblp2",
+      "type": "Activator",
+      "properties": {
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "itemId": "fc3ade54-122d-ad03-4c67-72c981bafc07",
+        "inputSerialization": {
+          "type": "Json",
+          "properties": {
+            "encoding": "UTF8"
+          }
+        }
+      },
+      "inputNodes": [
+        {
+          "name": "rti_eventstream_rtisaaghtblp2"
+        }
+      ],
+      "inputSchemas": [
+        {
+          "name": "rti_eventstream_rtisaaghtblp2",
+          "schema": {
+            "columns": [
+              {
+                "name": "Id",
+                "type": "Nvarchar(max)",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "AssetId",
+                "type": "Nvarchar(max)",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "ProductId",
+                "type": "Nvarchar(max)",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "Timestamp",
+                "type": "Nvarchar(max)",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "BatchId",
+                "type": "Nvarchar(max)",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "Vibration",
+                "type": "Float",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "Temperature",
+                "type": "Float",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "Humidity",
+                "type": "Float",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "Speed",
+                "type": "Float",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "DefectProbability",
+                "type": "BigInt",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "EventProcessedUtcTime",
+                "type": "DateTime",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "PartitionId",
+                "type": "BigInt",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "EventEnqueuedUtcTime",
+                "type": "DateTime",
+                "fields": null,
+                "items": null
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "streams": [
+    {
+      "id": "b3ddf29b-7151-42b6-b668-9bdef6be5b24",
+      "name": "rti_eventstream_rtisaaghtblp2",
+      "type": "DefaultStream",
+      "properties": {},
+      "inputNodes": [
+        {
+          "name": "evhrtisaaghtblp2"
+        }
+      ]
+    }
+  ],
+  "operators": [],
+  "compatibilityLevel": "1.1"
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "KQLDatabase",
+    "displayName": "rti_kqldb_rtisaaghtblp2",
+    "description": "rti_eventhouse_rtisaaghtblp2"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "3d0d7db4-5288-a186-4c7d-1a1b5f34fd62"
+  }
+}
