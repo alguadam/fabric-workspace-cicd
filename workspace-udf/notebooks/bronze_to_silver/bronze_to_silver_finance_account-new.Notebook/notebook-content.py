@@ -47,6 +47,8 @@ from pyspark.sql.functions import col, sum as spark_sum
 from pyspark.sql import functions as F
 import sempy.fabric as fabric
 
+# NEW LINE
+
 # Configuration - Using correct Fabric cross-lakehouse path from Fabric portal
 # Get workspace ID dynamically at runtime (avoids issues with spaces in workspace names)
 WORKSPACE_ID = fabric.get_notebook_workspace_id()
