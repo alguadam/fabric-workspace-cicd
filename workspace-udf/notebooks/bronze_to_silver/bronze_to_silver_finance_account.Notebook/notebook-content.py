@@ -46,6 +46,7 @@ import sempy.fabric as fabric
 
 # Configuration - Using correct Fabric cross-lakehouse path from Fabric portal
 # Get workspace ID dynamically at runtime (avoids issues with spaces in workspace names)
+# My new comment
 WORKSPACE_ID = fabric.get_notebook_workspace_id()
 
 # Get lakehouse ID dynamically (avoids issues with lakehouse names)
