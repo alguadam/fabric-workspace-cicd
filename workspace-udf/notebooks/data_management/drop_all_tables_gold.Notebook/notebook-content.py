@@ -32,6 +32,7 @@
 # CELL ********************
 
 # Drop tables in multiple schemas if they exist
+# New comment
 def drop_tables(schema_name, tables):
     try:
         existing_tables = set(spark.sql(f"SHOW TABLES IN {schema_name}").select('tableName').rdd.flatMap(lambda x: x).collect())
